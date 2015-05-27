@@ -13,7 +13,7 @@ public class ConexionDB {
 	private static final String HOST="localhost";
 	private static final String BBDD="thelaby";
 	private static final String USER="root";
-	private static final String PASS="z";
+	private static final String PASS="22545194";
 	
 	//DATOS DE LA BBDD
 	private String host;
