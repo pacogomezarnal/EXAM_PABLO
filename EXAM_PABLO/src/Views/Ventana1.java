@@ -70,7 +70,7 @@ public class Ventana1 extends JPanel {
 		
 		eapellidos = new JTextField();
 		eapellidos.setEditable(false);
-		eapellidos.setBounds(184, 109, 86, 20);
+		eapellidos.setBounds(184, 109, 223, 20);
 		add(eapellidos);
 		eapellidos.setColumns(10);
 		eapellidos.setText(cadete.getApellidos());
@@ -98,6 +98,8 @@ public class Ventana1 extends JPanel {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				CardLayout c=(CardLayout) card.getLayout();
+				JPanel ventana2=new Ventana2(card,cadete);
+				card.add(ventana2, "v2");
 				c.show(card, "v2");
 				
 			}
