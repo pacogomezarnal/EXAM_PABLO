@@ -45,6 +45,7 @@ public class Ventana1 extends JPanel {
 		add(tnacionalidad);
 		
 		enombre = new JTextField();
+		enombre.setEditable(false);
 		enombre.setBounds(182, 53, 86, 20);
 		add(enombre);
 		enombre.setColumns(10);
@@ -55,21 +56,24 @@ public class Ventana1 extends JPanel {
 		eid.setColumns(10);
 		
 		eapellidos = new JTextField();
+		eapellidos.setEditable(false);
 		eapellidos.setBounds(184, 109, 86, 20);
 		add(eapellidos);
 		eapellidos.setColumns(10);
 		
 		eedad = new JTextField();
+		eedad.setEditable(false);
 		eedad.setBounds(184, 165, 86, 20);
 		add(eedad);
 		eedad.setColumns(10);
 		
 		enacionalidad = new JTextField();
+		enacionalidad.setEditable(false);
 		enacionalidad.setBounds(184, 221, 86, 20);
 		add(enacionalidad);
 		enacionalidad.setColumns(10);
 		
-		JButton bsiguiente = new JButton("New button");
+		JButton bsiguiente = new JButton("Siguiente");
 		bsiguiente.setBounds(318, 263, 89, 23);
 		add(bsiguiente);
 
