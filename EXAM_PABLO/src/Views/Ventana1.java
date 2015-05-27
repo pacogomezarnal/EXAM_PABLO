@@ -69,9 +69,9 @@ public class Ventana1 extends JPanel {
 		add(enacionalidad);
 		enacionalidad.setColumns(10);
 		
-		JButton btnNewButton = new JButton("New button");
-		btnNewButton.setBounds(318, 263, 89, 23);
-		add(btnNewButton);
+		JButton bsiguiente = new JButton("New button");
+		bsiguiente.setBounds(318, 263, 89, 23);
+		add(bsiguiente);
 
 	}
 }
