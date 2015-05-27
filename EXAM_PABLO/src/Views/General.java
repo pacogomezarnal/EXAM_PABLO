@@ -23,11 +23,7 @@ public class General extends JFrame {
 		setContentPane(card);
 		card.setLayout(new CardLayout(0, 0));
 		JPanel ventana1=new Ventana1(card);
-		//JPanel ventana2=new Ventana2(card);
-		//JPanel ventana3=new Ventana3(card);
 		card.add(ventana1,"v1");
-		//card.add(ventana2,"v2");
-		//card.add(ventana3,"v3");
 	}
 
 }
