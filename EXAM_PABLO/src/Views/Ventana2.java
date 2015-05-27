@@ -63,6 +63,7 @@ public class Ventana2 extends JPanel {
 		JComboBox eequipo = new JComboBox();
 		eequipo.setBounds(35, 50, 118, 20);
 		add(eequipo);
+		//relleno el combo box de los miembros del equipo 6
 		Iterator<String> equiposde=dcadete.getEquipo("6").iterator();
 		while(equiposde.hasNext()){
 			//añadimos cada valor del iterator al comboBox
@@ -98,11 +99,18 @@ public class Ventana2 extends JPanel {
 		eid.setBounds(320, 50, 86, 20);
 		add(eid);
 		eid.setColumns(10);
+		//relleno los datos inicialmente para que no pete el programa si no se selecciona ningun usuario
+		cadete2=dcadete.getOtroCadete(eequipo.getSelectedItem().toString());
+		enombre.setText(cadete2.getNombre());
+		eid.setText(Integer.toString(cadete2.getId()));
+		e1apellido.setText(cadete2.getApellidos().split(" ")[0]);
+		e2apellido.setText(cadete2.getApellidos().split(" ")[1]);
+		enacionalidad.setText(cadete2.getNacionalidad());
 		
+		//configuro la accion la acción de cambiar datos al cambiar de persona
 		ItemListener cambioEquipo = new ItemListener(){
 			public void itemStateChanged(ItemEvent eventoCombo){
 				if(eventoCombo.getStateChange() == ItemEvent.SELECTED){
-					System.out.println(eequipo.getSelectedItem().toString());
 					cadete2=dcadete.getOtroCadete(eequipo.getSelectedItem().toString());
 					enombre.setText(cadete2.getNombre());
 					eid.setText(Integer.toString(cadete2.getId()));

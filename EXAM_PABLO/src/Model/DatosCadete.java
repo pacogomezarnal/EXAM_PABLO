@@ -20,6 +20,7 @@ public class DatosCadete {
 		ConexionDB.getInstance();
 		conexion=ConexionDB.getConexion();
 	}
+	//metodo que me devuelve un cadete segun el id que le indique
 	public Cadete getCadete(String ID){
 		Cadete objCadete=null;
 		//creo arrayList para almacenar resultado de la consulta
@@ -54,6 +55,7 @@ public class DatosCadete {
 		}
 		return objCadete;
 	}
+	//metodo que me devuelve una lista con los nombre de todos las personas del equipo que le indico
 	public ArrayList<String> getEquipo(String equipo){
 		ArrayList<String> equipos=new ArrayList<String>();
 		//creo arrayList para almacenar resultado de la consulta
@@ -82,6 +84,7 @@ public class DatosCadete {
 		}
 		return equipos;
 	}
+	//metodo que me devuelbe un cadete segun el nombre que le paso a este(segun el examen, este metodo no era necesario)
 	public Cadete getOtroCadete(String Nombre){
 		Cadete objCadete=null;
 		//creo arrayList para almacenar resultado de la consulta

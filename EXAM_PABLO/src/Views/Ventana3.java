@@ -52,6 +52,7 @@ public class Ventana3 extends JPanel {
 		JButton bcomprobar = new JButton("Comprobar");
 		bcomprobar.setBounds(10, 154, 410, 23);
 		add(bcomprobar);
+		//aunque no era asi, aqui obtengo los datos de las dos primeras ventanas y comprueba si son los correctos
 		bcomprobar.addActionListener(new ActionListener() {
 			
 			@Override

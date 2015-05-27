@@ -31,7 +31,7 @@ public class Ventana1 extends JPanel {
 		cadete=dcadete.getCadete(idcadete);
 		JLabel lblNewLabel = new JLabel("");
 		lblNewLabel.setIcon(new ImageIcon(Ventana1.class.getResource("/lib/icon.png")));
-		lblNewLabel.setBounds(34, 28, 101, 102);
+		lblNewLabel.setBounds(34, 28, 102, 102);
 		add(lblNewLabel);
 		
 		JLabel tnombre = new JLabel("Nombre");
@@ -93,6 +93,7 @@ public class Ventana1 extends JPanel {
 		JButton bsiguiente = new JButton("Siguiente");
 		bsiguiente.setBounds(318, 263, 89, 23);
 		add(bsiguiente);
+		//aplico la accion de cambiar el panel del cardLayout
 		bsiguiente.addActionListener(new ActionListener() {
 			
 			@Override
