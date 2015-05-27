@@ -48,7 +48,7 @@ public class ConexionDB {
 	//valores por defecto
 	public static ConexionDB getInstance() {
 	      if(instance == null) {
-	         instance = new ConexionDB(HOST,BBDD,USER,PASS);
+	         instance = new ConexionDB(ConexionDB.HOST,ConexionDB.BBDD,ConexionDB.USER,ConexionDB.PASS);
 	      }
 	      return instance;
 	  }
